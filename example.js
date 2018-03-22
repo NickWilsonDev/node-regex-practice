@@ -28,5 +28,6 @@ regex = /^http[s]?:\/\/([a-zA-Z].)*(google|Google).com([\/][a-zA-Z0-9\-]+)*$/;
 
 
 // star trek episode scraping from wiki page
-regex = /(\<th scope=\"row\" id=\"ep[0-9]+\" style=\"text-align:center\"\>([0-9]+))|(\<td class=\"summary\" style=\"text-align:left\"\>\"\<a href=\"\/wiki\/[a-zA-Z0-9_\(\):]+\" title=\"[a-zA-Z0-9 \(\)_:]+\"\>([a-zA-Z0-9 ]+)\<\/a\>\"\<\/td\>)|(\<td\>(([a-zA-Z]+)\&nbsp;([0-9]{1,2}),\&nbsp;([0-9]{4}))\<span style=\"display:none\"\>&nbsp;\(\<span class=\"bday dtstart published updated\"\>[0-9\-]+\<\/span\>\)\<\/span\>\<\/td\>)/;
+regex = /(\<th scope=\"row\" id=\"ep[0-9]+\" style=\"text-align:center\"\>([    0-9]+))[^]+?(\<td class=\"summary\" style=\"text-align:left\"\>\"\<a href=\"\/wiki\/[a-zA-Z0-9_\(\):]+\" title=\"[a-zA-Z0-9 \(\)_:]+\"\>([a-zA-Z0-9 ]+)\<\/a\>\"\<\/td\>)[^]+?(\<td\>(([a-zA-Z]+)\&nbsp;([0-9]{1,2}),\&nbsp;([0-9]{4}))\<span style=\"display:none\"\>&nbsp;\(\<span class=\"bday dtstart published updated\"\>[0-9\-]+\<\/span\>\)\<\/span\>\<\/td\>)/;
+
 
